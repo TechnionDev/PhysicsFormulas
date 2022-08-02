@@ -1,0 +1,1922 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+\usepackage{xcolor}
+\usepackage{fontspec}
+\pagecolor[rgb]{0.15,0.15,0.15} %black
+\color[rgb]{1,1,1} %grey
+
+\newfontfamily\mylistingsfont{Droid Sans Mono for Powerline}
+\definecolor{lbcolor}{rgb}{0.3,0.3,0.3}  
+\definecolor{lkwcolor}{rgb}{0.7,0.7,0.9}
+%\definefallbackfamily [myfont] [serif] [Apple Color Emoji] [range=greekandcoptic]
+%\definefontfamily [myfont] [roman] [Apple Color Emoji]
+\end_preamble
+\use_default_options true
+\begin_removed_modules
+theorems-ams
+\end_removed_modules
+\begin_modules
+eqs-within-sections
+figs-within-sections
+linguistics
+theorems-bytype
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "default"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 8
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0cm
+\topmargin 0.4cm
+\rightmargin 0.4cm
+\bottommargin 0.4cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "basicstyle={\mylistingsfont},language={C++},backgroundcolor={\color{lbcolor}},showstringspaces=false,xleftmargin=5mm,aboveskip=0pt,belowskip=0pt,keywordstyle={\bfseries\color{lkwcolor}},morekeywords={include, printf}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+פיסיקה
+\family roman
+\series bold
+\shape smallcaps
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape smallcaps
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דף נוסחאות
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\undeq}[1]{\underset{\text{#1}}{\underbrace{=}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\und}[2]{\underset{\text{#2}}{\underbrace{#1}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\upreq}[1]{\overset{#1}{\overbrace{=}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\upr}[2]{\overset{#2}{\overbrace{#1}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\C}{\mathbb{C}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\P}{\mathbb{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\Ra}{\Longrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\Lra}{\Longleftrightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\La}{\Longleftarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ra}{\rightarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\leftarrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lra}{\longleftrightarrow}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\set}[2]{\left\{  #1\mid#2\right\}  }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\e}[2]{\left(#1,#2\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left|#1\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\seg}[2]{\left[#1,#2\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\absv}{\left|V\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\renewcommand{\absv}{\left|E\right|}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\sseq}{\subseteq}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\ewfunc}[1]{#1:E\ra\R}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ewfuncp}[1]{#1:E\ra\R^{+}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ewfuncnn}[1]{#1:E\ra\R_{\geq0}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\vwfunc}[1]{#1:V\ra\R}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\d}{\partial}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\h}[1]{\hat{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hi}{\hat{i}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hj}{\hat{j}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hk}{\hat{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hx}{\hat{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hy}{\hat{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hz}{\hat{z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\grad}{\vec{\nabla}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lam}{\lambda}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\oiint}{\varoiint}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eps}{\varepsilon}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ez}{\varepsilon_{0}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\vF}{\vec{F}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vN}{\vec{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\eps}{\varepsilon}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\t}{\theta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\p}{\phi}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vp}{\varphi}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\half}{\frac{1}{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tp}{2\pi}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\c}[1]{\dot{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\exp}[1]{\cdot10^{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hc}{\c h\c c}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hb}{\c{\hslash}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Copy pastables:
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\det\left(\begin{matrix}\hi & \hj & \hk\\
+\\
+\\
+\end{matrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\det\left(\begin{matrix}\\
+\\
+\\
+\end{matrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\det\left(\begin{matrix}\\
+\\
+\end{matrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\int_{x=}\int_{y=}\int_{z=}dzdydx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\int_{\t=}\int_{r=}\int_{z=}dzdrd\t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\int_{r=}\int_{\t=}\int_{\phi=}d\phi d\t dr$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+הערות
+\end_layout
+
+\begin_layout Plain Layout
+קבועים יסומנו עם 
+\begin_inset Formula $\c{\square}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+קבועים
+\end_layout
+
+\begin_layout Plain Layout
+קבוע בולצמן 
+\begin_inset Formula $\c{\sigma}=5.67\exp{-8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+קבוע פלאנק
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+או 
+\begin_inset Formula $\c h=6.6261\exp{-34}\left[\frac{kg\cdot m^{2}}{s}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\c h=4.136\exp{-15}\left[eV\cdot s\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hb=\frac{\c h}{2\pi}=6.582\exp{-16}\left[eV\cdot s\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hc=12400\left[eV\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+קרינת גוף שחור
+\end_layout
+
+\begin_layout Plain Layout
+בשווי משקל 
+\begin_inset Formula $P_{in}=P_{out}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+שטף אנרגיה 
+\begin_inset Formula $F=\c{\sigma}T^{4}\left[\frac{Watt}{m^{2}}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+הספק 
+\begin_inset Formula $P=A\cdot F$
+\end_inset
+
+ )
+\begin_inset Formula $A$
+\end_inset
+
+ שטח פנים(
+\end_layout
+
+\begin_layout Plain Layout
+א
+\begin_inset Quotes erd
+\end_inset
+
+ג עם קרינה בעוצמה מקס 
+\begin_inset Formula $\lam_{\max}\cong\frac{2.898\exp{-3}}{T}\left[m\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+תדירות עם צפיפות קרינה מקס 
+\begin_inset Formula $v_{\max}\cong5.879\exp{10}T\left[Hz\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+אפקט פוטואלקטרי
+\end_layout
+
+\begin_layout Plain Layout
+אנרגיה של פוטון 
+\begin_inset CommandInset label
+LatexCommand label
+name "Eph"
+
+\end_inset
+
+ 
+\begin_inset Formula $E_{ph}=\frac{\c h\c c}{\lam}=\c h\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+פונק' עבודה
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מינ' אנרגיה כדי לחשרר 
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $W=B=\p=E_{ph}-E_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+אנרגיה קינטית מקסימלית של האלקטרון הכי אנרגטי*** 
+\begin_inset Formula $E_{k,\max}=E_{ph}-\und{\phi}{Volt?}=\frac{\hc}{\lam}-\phi+eV_{stop}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+תדירות/א
+\begin_inset Quotes erd
+\end_inset
+
+ג סף )
+\begin_inset Formula $W$
+\end_inset
+
+ עבודה( 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+התדירות המינימלית ואורך הגל המקסימלי שגורמים לצאתם של אלקטרונים )בעלי אנרגיה
+ קינטית השווה לאפס - אופייני לסוג המתכת(.
+ לא תלויים בעוצמת האור - מספר הפוטונים.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\lam_{\max}=\frac{\hc}{W}$
+\end_inset
+
+ ; 
+\begin_inset Formula $v_{\min}=\frac{W}{\c h}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מתח עצירה 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מתח מינימלי שצריך להפעיל כדי למנוע מהאלקטרון הכי אנרגטי להשתחרר
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $q_{e}v_{stop}=E_{k,\max}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מספר פוטונים נפלטים 
+\begin_inset Formula $N=\frac{P}{\ref{Eph}E_{ph}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+משוואות שרדינגר
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+ - 
+\begin_inset Formula $E_{n}=\frac{-\mu\c k^{2}z^{2}\c e^{4}}{2\hb n^{2}}=-\frac{\c z^{2}}{n^{2}}E_{1}\,;\,E_{1}=\frac{\mu\c k^{2}\c e^{4}}{2\hb}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+ מספר קוונטי מסלולי 
+\begin_inset Formula $l=0,1,2,\dots,n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\#$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\c s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\c p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\c d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\c f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\c g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $m$
+\end_inset
+
+ מספר קוונטי מגנטי 
+\begin_inset Formula 
+\[
+m=-l,\left(-l+1\right),\left(-l+2\right),\dots,0,\dots,l
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ניוון: עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ כלשהו, הניוון הוא 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+במקרה ש
+\begin_inset Formula $\left(n,l=n-1,m\right)$
+\end_inset
+
+: 
+\begin_inset Formula $r_{propable}=r_{bohr}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+יחידות
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $mm=10^{-3}m$
+\end_inset
+
+, 
+\begin_inset Formula $\mu m=10^{-6}m$
+\end_inset
+
+, 
+\begin_inset Formula $nm=10^{-9}m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+חוקי לוג 
+\begin_inset Formula $\log/\ln$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+הגדרה
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+a^{x}=y\Lra\log_{a}\left(y\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}=y\Lra\log_{e}y=\ln y=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log_{a}\left(a^{x}\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e=\lim_{x\ra\infty}\left(1+\frac{1}{x}\right)^{x}=\lim_{x\ra0}\left(1+x\right)^{\frac{1}{x}}=2.71828
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\log_{b}x=\frac{\ln x}{\ln b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כפל/חילוק
+\begin_inset Formula 
+\[
+\log_{b}\left(xy\right)=\log_{b}x+\log_{b}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log_{b}\frac{x}{y}=\log_{b}x-\log_{b}y=-\log_{b}\frac{y}{x}
+\]
+
+\end_inset
+
+החלפת בסיס
+\begin_inset Formula 
+\[
+\log_{b}c=\frac{1}{\log_{c}b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+נגזרות ואינטגרל
+\begin_inset Formula 
+\[
+\frac{d}{dx}\log_{b}x=\frac{1}{x\ln b},\,\frac{d}{dx}\ln x=\frac{1}{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\log_{b}x\cdot dx=x\left(\log_{b}x-\frac{1}{\ln b}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\ln x\cdot dx=x\ln x-x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}x^{n}e^{-\alpha x}dx=\frac{n!}{\alpha^{n+1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ערכים מיוחדים
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\log_{b}0=undefined,\,\lim_{x\ra0^{+}}\log_{b}x=-\infty
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log_{b}1=0,\,\log_{b}b=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\ra\infty}\log_{b}x=\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+חוקי חזקות
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+x^{a}\cdot x^{b}=x^{a+b},\,\left(x^{a}\right)^{b}=x^{ab},\,\frac{x^{a}}{x^{b}}=x^{a-b}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{-a}=\frac{1}{x^{a}},\,x^{\frac{a}{b}}=\sqrt[b]{x^{a}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+ספין
+\end_layout
+
+\begin_layout Plain Layout
+פרמיונים ובוזונים
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+בוזונים
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פרמיונים
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פוטון: 
+\begin_inset Formula $\gamma\ra S=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+אלקטרון: 
+\begin_inset Formula $e^{-}\ra S=\half$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+בוזון היגס: 
+\begin_inset Formula $S=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פרוטון: 
+\begin_inset Formula $p^{+}\ra S=\half$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אפקט זימן
+\end_layout
+
+\begin_layout Plain Layout
+כאשר 
+\begin_inset Formula $\vec{B}=B\hz$
+\end_inset
+
+ )אפשר לסובב את הבעיה ככה שיתקיים(.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vec{\mu}=-\frac{\mu_{B}\left(\vec{L}+2\vec{S}\right)}{\hb}$
+\end_inset
+
+ ; 
+\begin_inset Formula $W=-\vec{\mu}\cdot\vec{B}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+צורות- פונקציות
+\end_layout
+
+\begin_layout Plain Layout
+גליל 
+\begin_inset Formula $x^{2}+y^{2}=R^{2}$
+\end_inset
+
+ מעגל 
+\begin_inset Formula $z=const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אליפסה 
+\begin_inset Formula $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כדור 
+\begin_inset Formula $x^{2}+y^{2}+z^{2}=R^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+גלים
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+מיקום מקסימומים 
+\begin_inset Formula $y_{max}\left(n\right)=n\frac{\lam}{d}\cdot L$
+\end_inset
+
+, 
+\begin_inset Formula $x_{max}\left(n\right)\upr =?\frac{d}{n\lam}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ניסוי יאנג
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../Exams Study/Physics 2/YangNCracksGraph.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+עם טבלה בעובי 
+\begin_inset Formula $D$
+\end_inset
+
+, מקדם שבירה 
+\begin_inset Formula $n$
+\end_inset
+
+ והפרש פאזות:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $d\sin\t=\frac{\lam}{2\pi}\Delta\vp-D\left(n-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+פתרון משוואה דיפ
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $y'=c-ay\Ra y\left(x\right)=\frac{c}{a}+ke^{-ax}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+אנרגיה
+\end_layout
+
+\begin_layout Plain Layout
+קינטית: 
+\begin_inset Formula $\frac{1}{2}mv^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+פ' כבידתית: 
+\begin_inset Formula $mgh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+מכניקה
+\end_layout
+
+\begin_layout Plain Layout
+כוח כבידה 
+\begin_inset Formula $mg$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מהירות נפילה חופשית 
+\begin_inset Formula $gt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מרחק נפילה חופשית 
+\begin_inset Formula $\frac{1}{2}gt^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

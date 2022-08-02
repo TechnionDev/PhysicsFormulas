@@ -1890,13 +1890,13 @@ height "0.2pt"
 \end_inset
 
 
-\change_inserted -755788726 1659454844
+\change_inserted -755788726 1659455148
 
 \end_layout
 
 \begin_layout Plain Layout
 
-\change_inserted -755788726 1659454853
+\change_inserted -755788726 1659455148
 
 \series bold
 נושא חדש כלשהו
@@ -1904,11 +1904,13 @@ height "0.2pt"
 
 \begin_layout Plain Layout
 
-\change_inserted -755788726 1659454942
+\change_inserted -755788726 1659455148
 נוסחה 
 \begin_inset Formula $x^{2}+y^{2}=r^{2}$
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 

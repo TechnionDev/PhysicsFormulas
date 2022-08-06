@@ -1004,12 +1004,16 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
+<lyxtabular version="3" rows="2" columns="6">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1021,20 +1025,6 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\#$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1047,19 +1037,6 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\numeric on
-0
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1072,19 +1049,6 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\numeric on
-1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1097,19 +1061,6 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\numeric on
-2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1126,9 +1077,10 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\c g$
+\end_inset
 
-\numeric on
-3
+
 \end_layout
 
 \end_inset
@@ -1139,10 +1091,54 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\c g$
+\begin_inset Formula $\#$
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
 \end_layout
 
 \end_inset
@@ -1235,6 +1231,89 @@ height "0.2pt"
 
 , 
 \begin_inset Formula $nm=10^{-9}m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף משוואות מחסומי פוטנציאל מתרגול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Plain Layout
+ש: איך יכול להיות מקדם 
+\begin_inset Formula $k_{i}$
+\end_inset
+
+ קומפלקסי )
+\begin_inset Formula $k_{i}=\frac{\tp}{\lam_{i}}$
+\end_inset
+
+( אבל האורך גל לא יהיה קומפלקסי??
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף בורות פוטנציאל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף מודל בוהר.
+ כולל הסבר מה זה 
+\begin_inset Formula $z$
+\end_inset
+
+ )מספר אטומי( ולרשום כמה גודמות לאלמנטים שונים.
+\end_layout
+
 \end_inset
 
 
@@ -1483,6 +1562,36 @@ x^{-a}=\frac{1}{x^{a}},\,x^{\frac{a}{b}}=\sqrt[b]{x^{a}}
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף יחידות מידה 
+\begin_inset CommandInset href
+LatexCommand href
+name "מפה"
+target "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F_(%D7%9E%D7%99%D7%93%D7%94)#:~:text=%D7%94%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F%20%D7%94%D7%99%D7%90%20%D7%92%D7%9D%20%D7%99%D7%97%D7%99%D7%93%D7%AA%20%D7%9E%D7%A9%D7%A7%D7%9C,%D7%9B%D7%95%D7%9B%D7%91%D7%99%20%D7%9C%D7%9B%D7%AA%20%D7%90%D7%97%D7%A8%D7%99%D7%9D%20%D7%91%D7%97%D7%9C%D7%9C."
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F_(%D7%9E%D7%99%D
+7%93%D7%94)#:~:text=%D7%94%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F%20%D7%94%D7%99%D7
+%90%20%D7%92%D7%9D%20%D7%99%D7%97%D7%99%D7%93%D7%AA%20%D7%9E%D7%A9%D7%A7%D7%9C,%
+D7%9B%D7%95%D7%9B%D7%91%D7%99%20%D7%9C%D7%9B%D7%AA%20%D7%90%D7%97%D7%A8%D7%99%D7
+%9D%20%D7%91%D7%97%D7%9C%D7%9C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \size scriptsize
 \begin_inset CommandInset line
@@ -1503,12 +1612,24 @@ height "0.2pt"
 \end_layout
 
 \begin_layout Plain Layout
+ניוון של ספין לא שלם 
+\begin_inset Formula $2s+1$
+\end_inset
+
+ )של ספין שלם הניוון הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Plain Layout
 פרמיונים ובוזונים
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="2">
+<lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1538,7 +1659,7 @@ height "0.2pt"
 
 \begin_layout Plain Layout
 פוטון: 
-\begin_inset Formula $\gamma\ra S=1$
+\begin_inset Formula $\gamma\ra s=1$
 \end_inset
 
 
@@ -1551,7 +1672,35 @@ height "0.2pt"
 
 \begin_layout Plain Layout
 אלקטרון: 
-\begin_inset Formula $e^{-}\ra S=\half$
+\begin_inset Formula $e^{-}\ra s=\half$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+בוזון היגס: 
+\begin_inset Formula $s=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+פרוטון: 
+\begin_inset Formula $p^{+}\ra s=\half$
 \end_inset
 
 
@@ -1565,10 +1714,6 @@ height "0.2pt"
 \begin_inset Text
 
 \begin_layout Plain Layout
-בוזון היגס: 
-\begin_inset Formula $S=0$
-\end_inset
-
 
 \end_layout
 
@@ -1578,8 +1723,17 @@ height "0.2pt"
 \begin_inset Text
 
 \begin_layout Plain Layout
-פרוטון: 
-\begin_inset Formula $p^{+}\ra S=\half$
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף: זהב, כסף וכ
+\begin_inset Quotes erd
+\end_inset
+
+ו
+\end_layout
+
 \end_inset
 
 
@@ -1589,6 +1743,31 @@ height "0.2pt"
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כאשר 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+ בכיוון התנועה של החלקיק.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לבדוק לפני שאני מתחייב: 
+\begin_inset Formula $m_{s}=\pm\left(\half+i\right),i=0,\dots,2s-1$
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -1608,7 +1787,7 @@ height "0.2pt"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Formula $\vec{\mu}=-\frac{\mu_{B}\left(\vec{L}+2\vec{S}\right)}{\hb}$
+\begin_inset Formula $\vec{\mu}=-\frac{\mu_{B}\left(\vec{L}+2\vec{s}\right)}{\hb}$
 \end_inset
 
  ; 
@@ -1619,19 +1798,128 @@ height "0.2pt"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Formula $E_{n,m_{l},m_{s}}=-\frac{z^{2}}{n^{2}}E_{1}+m_{l}\mu_{B}B+2m_{s}\mu_{B}B$
+\begin_inset Formula $E_{n,m_{l},m_{s}}=-\frac{z^{2}}{n^{2}}E_{1}+m_{l}\mu_{B}B+\und{2m_{s}\mu_{B}B}{\text{for effect Ziman, we assume \ensuremath{=0}}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mu_{B}=\frac{e\hb}{2m}$
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף הערה מה זה 
+\begin_inset Formula $m_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מומנט מגנטי: 
+\begin_inset Formula $\mu_{B}=\frac{\upr{\c e}{\text{charge}}\hb}{2\und m{mass}}$
 \end_inset
 
 .
- עבור 
-\begin_inset Formula $e^{-}\ra\mu_{B}=5.8\exp{-5}\left[\frac{eV}{T}\right]$
+
+\size footnotesize
+ 
+\size scriptsize
+עבור אלקטרון 
+\begin_inset Formula $e^{-}\ra\mu_{B}=9.27\exp{-24}\left[\frac{J}{T}\right]=5.8\exp{-5}\left[\frac{eV}{T}\right]$
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+לשאול את נירית האם 
+\begin_inset Formula $\mu_{B}$
+\end_inset
+
+ תמיד קבוע או שונה עבור חליקיקים שונים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+תנע זוויתי
+\end_layout
+
+\begin_layout Plain Layout
+תנע זוויתי 
+\begin_inset Formula $L=\sqrt{l\left(l+1\right)\hb}$
+\end_inset
+
+ )
+\begin_inset Formula $l=0,1,\dots,\left(n-1\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+היטל על ציר 
+\begin_inset Formula $\hz$
+\end_inset
+
+: 
+\begin_inset Formula $L_{z}=m_{l}\hb$
+\end_inset
+
+ )
+\begin_inset Formula $m_{l}=-l,-l+1,\dots,0,\dots,l$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+זווית: 
+\begin_inset Formula $\cos\t=\frac{L_{z}}{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף ניסוי שטרן-גרלך
+\end_layout
+
 \end_inset
 
 

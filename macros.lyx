@@ -740,6 +740,19 @@ Symbols
 \end_layout
 
 \begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\ua}{\uparrow}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\da}{\downarrow}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 

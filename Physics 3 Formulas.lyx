@@ -115,7 +115,7 @@ theorems-bytype
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "~/Library/Application Support/LyX-2.3/templates/macros.lyx"
+filename "macros.lyx"
 
 \end_inset
 
@@ -646,6 +646,16 @@ status collapsed
 
  של אלקטרון עקור הכי אנרגטי: 
 \begin_inset Formula $E_{k,\max}=\c h\nu-\p=\und{\frac{\c h\c c}{\lam}}{E_{ph}}-\p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename photoelectric_current.jpg
+	scale 70
+
 \end_inset
 
 
@@ -2127,10 +2137,6 @@ status open
 
 \series bold
 אורך גל דה-ברולי
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout

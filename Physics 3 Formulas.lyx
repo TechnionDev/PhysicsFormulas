@@ -193,6 +193,16 @@ filename "~/Library/Application Support/LyX-2.3/templates/macros.lyx"
 \begin_layout Standard
 
 \lang english
+\begin_inset FormulaMacro
+\newcommand{\am}{\mathring{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
 \begin_inset Note Note
 status open
 
@@ -387,7 +397,7 @@ status collapsed
 
 \begin_inset Formula 
 \[
-\hc=12400\left[eV\right]
+\hc=12400\left[eV\cdot\am\right]
 \]
 
 \end_inset
@@ -398,6 +408,61 @@ status collapsed
 \begin_layout Plain Layout
 רדיוס בוהר 
 \begin_inset Formula $\az=0.529\mathring{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+פיסיקה קלאסית
+\end_layout
+
+\begin_layout Plain Layout
+תנע 
+\begin_inset Formula $p=mv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{k}=\frac{p^{2}}{2m}=\half mv^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+למלא
+\end_layout
+
 \end_inset
 
 
@@ -512,7 +577,41 @@ name "Eph"
 \end_inset
 
  
-\begin_inset Formula $E_{ph}=\frac{\c h\c c}{\lam}=\c h\nu$
+\begin_inset Formula $E_{ph}=E_{\gam}=\frac{\c h\c c}{\lam}=\c h\nu=\c h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+תנע פוטון 
+\begin_inset Formula $p_{ph}=\frac{\c h}{\lam}$
+\end_inset
+
+.
+ עוצמת האור 
+\begin_inset Formula $I\propto N\cdot E_{ph}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מספר פוטונים
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+ הספק = אנרגיה לזמן
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula $N=\frac{P}{E_{ph}}$
 \end_inset
 
 
@@ -533,8 +632,20 @@ status collapsed
 
 \end_inset
 
- 
-\begin_inset Formula $W=B=\p=E_{ph}-E_{k}$
+: 
+\begin_inset Formula $W=B=\p=\und{E_{ph}-\upr{E_{k}}{\text{of released e}}}{\text{for photon that manages to release e}}=\phi+eV_{stop}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אנרגיה קינטית 
+\begin_inset Formula $max$
+\end_inset
+
+ של אלקטרון עקור הכי אנרגטי: 
+\begin_inset Formula $E_{k,\max}=\c h\nu-\p=\und{\frac{\c h\c c}{\lam}}{E_{ph}}-\p$
 \end_inset
 
 
@@ -1890,24 +2001,6 @@ status open
 \end_inset
 
 
-\size footnotesize
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\size footnotesize
-לשאול את נירית האם 
-\begin_inset Formula $\mu_{B}$
-\end_inset
-
- תמיד קבוע או שונה עבור חליקיקים שונים
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -1973,6 +2066,241 @@ status open
 \begin_layout Plain Layout
 להוסיף ניסוי שטרן-גרלך
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+אורך גל דה-ברולי
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+צורות- פונקציות
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+צורות- פונקציות
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
 
 \end_inset
 
@@ -2265,15 +2593,6 @@ height "0.2pt"
 
 
 \begin_inset space \hspace*{\fill}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size scriptsize
-\begin_inset Newpage pagebreak
 \end_inset
 
 

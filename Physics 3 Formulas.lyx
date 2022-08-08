@@ -8,12 +8,13 @@
 \begin_preamble
 \usepackage{xcolor}
 \usepackage{fontspec}
-\pagecolor[rgb]{0.15,0.15,0.15} %black
-\color[rgb]{1,1,1} %grey
+% \pagecolor[rgb]{0.15,0.15,0.15} %black
+% \color[rgb]{1,1,1} %grey
 
 \newfontfamily\mylistingsfont{Droid Sans Mono for Powerline}
 \definecolor{lbcolor}{rgb}{0.3,0.3,0.3}  
 \definecolor{lkwcolor}{rgb}{0.7,0.7,0.9}
+\definecolor{sharpPink}{rgb}{1, 0, 0.757}
 %\definefallbackfamily [myfont] [serif] [Apple Color Emoji] [range=greekandcoptic]
 %\definefontfamily [myfont] [roman] [Apple Color Emoji]
 \end_preamble
@@ -61,7 +62,7 @@ theorems-bytype
 \pdf_colorlinks true
 \pdf_backref section
 \pdf_pdfusetitle true
-\papersize default
+\papersize a4paper
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -88,9 +89,9 @@ theorems-bytype
 \color #008000
 \end_index
 \leftmargin 0cm
-\topmargin 0.4cm
+\topmargin 0.6cm
 \rightmargin 0.4cm
-\bottommargin 0.4cm
+\bottommargin 0.6cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -100,8 +101,8 @@ theorems-bytype
 \quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
-\papersides 1
-\paperpagestyle default
+\papersides 2
+\paperpagestyle headings
 \listings_params "basicstyle={\mylistingsfont},language={C++},backgroundcolor={\color{lbcolor}},showstringspaces=false,xleftmargin=5mm,aboveskip=0pt,belowskip=0pt,keywordstyle={\bfseries\color{lkwcolor}},morekeywords={include, printf}"
 \tracking_changes false
 \output_changes false
@@ -133,6 +134,10 @@ filename "macros.lyx"
 \end_layout
 
 \begin_layout Title
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 פיסיקה
 \family roman
 \series bold
@@ -190,6 +195,11 @@ filename "macros.lyx"
 דף נוסחאות
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \lang english
@@ -205,6 +215,26 @@ filename "macros.lyx"
 \lang english
 \begin_inset FormulaMacro
 \renewcommand{\am}{\mathring{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\el}{e^{-}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset FormulaMacro
+\newcommand{\defaz}{\az=\frac{\hb^{2}}{m_{e}kq_{e}^{2}}=0.529\mathring{A}}
 \end_inset
 
 
@@ -279,6 +309,50 @@ Copy pastables:
 
 \lang english
 \begin_inset Formula $\int_{r=}\int_{\t=}\int_{\phi=}d\phi d\t dr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+חוקי חזקות
+\end_layout
+
 \end_inset
 
 
@@ -366,7 +440,14 @@ height "0.2pt"
 \end_layout
 
 \begin_layout Plain Layout
-קבוע בולצמן 
+קבוע בולצמן
+\begin_inset CommandInset label
+LatexCommand label
+name "boltzman"
+
+\end_inset
+
+ 
 \begin_inset Formula $\c{\sigma}=5.67\exp{-8}$
 \end_inset
 
@@ -417,49 +498,49 @@ status collapsed
 
 \begin_layout Plain Layout
 רדיוס בוהר 
-\begin_inset Formula $\az=0.529\mathring{A}$
+\begin_inset Formula $\defaz$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
 \end_inset
 
 
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 1
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.1pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
 \series bold
-פיסיקה קלאסית
+יחידות
 \end_layout
 
 \begin_layout Plain Layout
-תנע 
-\begin_inset Formula $p=mv$
+\begin_inset Formula $mm=10^{-3}m$
+\end_inset
+
+, 
+\begin_inset Formula $\mu m=10^{-6}m$
+\end_inset
+
+, 
+\begin_inset Formula $nm=10^{-9}m$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Formula $E_{k}=\frac{p^{2}}{2m}=\half mv^{2}$
+\begin_inset Formula $1\left[Kg\right]=6.022\exp{26}\left[amu\right]$
 \end_inset
 
 
@@ -470,7 +551,24 @@ status open
 status open
 
 \begin_layout Plain Layout
-למלא
+להוסיף יחידות מידה 
+\begin_inset CommandInset href
+LatexCommand href
+name "מפה"
+target "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F_(%D7%9E%D7%99%D7%93%D7%94)#:~:text=%D7%94%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F%20%D7%94%D7%99%D7%90%20%D7%92%D7%9D%20%D7%99%D7%97%D7%99%D7%93%D7%AA%20%D7%9E%D7%A9%D7%A7%D7%9C,%D7%9B%D7%95%D7%9B%D7%91%D7%99%20%D7%9C%D7%9B%D7%AA%20%D7%90%D7%97%D7%A8%D7%99%D7%9D%20%D7%91%D7%97%D7%9C%D7%9C."
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F_(%D7%9E%D7%99%D
+7%93%D7%94)#:~:text=%D7%94%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F%20%D7%94%D7%99%D7
+%90%20%D7%92%D7%9D%20%D7%99%D7%97%D7%99%D7%93%D7%AA%20%D7%9E%D7%A9%D7%A7%D7%9C,%
+D7%9B%D7%95%D7%9B%D7%91%D7%99%20%D7%9C%D7%9B%D7%AA%20%D7%90%D7%97%D7%A8%D7%99%D7
+%9D%20%D7%91%D7%97%D7%9C%D7%9C
 \end_layout
 
 \end_inset
@@ -506,6 +604,283 @@ status open
 
 \begin_layout Plain Layout
 
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+פיסיקה קלאסית
+\end_layout
+
+\begin_layout Plain Layout
+תנע 
+\begin_inset Formula $p=mv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{k}=\frac{p^{2}}{2m}=\half mv^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+יחסות
+\end_layout
+
+\begin_layout Plain Layout
+עבור חלקיק בעל מסה
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $m=$
+\end_inset
+
+ מסת החלקיק
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vec{u}\rightarrow=$
+\end_inset
+
+ מהירות החלקיק 
+\begin_inset Formula $\gamma=\frac{1}{\sqrt{1-u^{2}/c^{2}}}\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+נגדיר 
+\begin_inset Formula $E=\gamma mc^{2}$
+\end_inset
+
+ אנרגיה כללית
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E^{2}=\left(pc\right)^{2}+\left(mc^{2}\right)^{2}$
+\end_inset
+
+ תנע ואנרגיה
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{k}=\left(\gamma-1\right)mc^{2}$
+\end_inset
+
+ אנרגיה קינטית
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{rest}=mc^{2}$
+\end_inset
+
+ אנרגית מנוחה
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+עבור חלקיק חסר מסה )פוטון(
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{ph}=pc=hf=h\nu=\frac{hc}{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+גלים
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega$
+\end_inset
+
+ תדירות ; 
+\begin_inset Formula $k$
+\end_inset
+
+ מספר הגל ; 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ אורך הגל ; 
+\begin_inset Formula $v$
+\end_inset
+
+ מהירות הגל
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $v=\lambda f=\frac{\omega}{k}\omega=2\pi f=\frac{2\pi}{T}k=\frac{2\pi}{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+משוואת גל הרמונית 
+\begin_inset Formula $\psi\left(x,t\right)=Acos(kx-\omega t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+חבורת גלים הרמונית 
+\begin_inset Formula $\psi\left(x,t\right)=A_{1}cos\left(k_{1}x-\omega_{1}t\right)+A_{2}cos\left(k_{2}x-\omega_{2}t\right)+\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $v_{group}=\frac{d\omega}{dk}$
+\end_inset
+
+ מהירות מעטפת
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $v_{phase}=\frac{\omega}{k}$
+\end_inset
+
+ מהירות פאזה של גל בחבורה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \series bold
 קרינת גוף שחור
 \end_layout
@@ -519,8 +894,16 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
+חוק סטפן-בולצמן
+\series default
+ )הספק נפלט ליח' שטח פנים של הגוף השחור(:
+\end_layout
+
+\begin_layout Plain Layout
 שטף אנרגיה 
-\begin_inset Formula $F=\c{\sigma}T^{4}\left[\frac{Watt}{m^{2}}\right]$
+\begin_inset Formula $J=\ref{boltzman}\c{\sigma}T^{4}\left[\frac{Watt}{m^{2}}\right]$
 \end_inset
 
 
@@ -528,7 +911,7 @@ status open
 
 \begin_layout Plain Layout
 הספק 
-\begin_inset Formula $P=A\cdot F$
+\begin_inset Formula $P=A\cdot J$
 \end_inset
 
  )
@@ -539,12 +922,24 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
+חוק ווין
+\series default
+ )קשר בין טמפ' ל
+\begin_inset Formula $\lam$
+\end_inset
+
+ עם מקס' צפיפות קרינה(:
+\end_layout
+
+\begin_layout Plain Layout
 א
 \begin_inset Quotes erd
 \end_inset
 
 ג עם קרינה בעוצמה מקס 
-\begin_inset Formula $\lam_{\max}\cong\frac{2.898\exp{-3}}{T}\left[m\right]$
+\begin_inset Formula $\lam_{\max}\cong\frac{\upr{2.898\exp{-3}}{\alpha}}{T\left[Kelvin\right]}\left[m\right]$
 \end_inset
 
 
@@ -553,6 +948,49 @@ status open
 \begin_layout Plain Layout
 תדירות עם צפיפות קרינה מקס 
 \begin_inset Formula $v_{\max}\cong5.879\exp{10}T\left[Hz\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+חוק פלאנק
+\series default
+ )בניגוד למקסוול, מתבסס על זה שגוף שחור סופר/פולט קרינה כחלקיקים ולא כגלים(:
+\end_layout
+
+\begin_layout Plain Layout
+פילוג אנרגיה כפונק' של 
+\begin_inset Formula $\lam$
+\end_inset
+
+: 
+\begin_inset Formula $u\left(\lam\right)=\frac{8\pi\hc}{\lam^{5}\left(exp\left(\frac{\hc}{\lam\c{\sig}T}\right)-1\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+פילוג אנרגיה כפונק' של 
+\begin_inset Formula $\nu$
+\end_inset
+
+: 
+\begin_inset Formula $u\left(\nu\right)=\frac{8\pi\c h\nu^{3}}{\c c^{3}\left(exp\left(\frac{\c h\nu}{\c{\sig}T}\right)-1\right)}$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -643,7 +1081,7 @@ status collapsed
 \end_inset
 
 : 
-\begin_inset Formula $W=B=\p=\und{E_{ph}-\upr{E_{k}}{\text{of released e}}}{\text{for photon that manages to release e}}=\phi+eV_{stop}$
+\begin_inset Formula $W=B=\p=\und{E_{ph}-\upr{E_{k}}{\text{של \ensuremath{e^{-}} משוחרר}}}{\text{for photon that manages to release \ensuremath{e^{-}}}}=\phi+eV_{stop}$
 \end_inset
 
 
@@ -655,17 +1093,22 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-תדר מינימלי בשביל עקירה
+תדר מינימלי בשביל עקירת 
+\begin_inset Formula $e^{-}$
+\end_inset
+
+ים )בעלי אנרגיה קינטית השווה לאפס; אופייני לסוג המתכת(.
+ לא תלויים בעוצמת האור - מספר הפוטונים.
 \end_layout
 
 \end_inset
 
 : 
-\begin_inset Formula $\nu_{cutoff}=f_{cutoff}=\frac{\p}{\c h}$
+\begin_inset Formula $\nu_{min}=f_{min}=\frac{\p}{\c h}$
 \end_inset
 
  ; אורך גל סף 
-\begin_inset Formula $\lam_{th}=\lam_{max}=\frac{\c c}{f_{cutoff}}=\frac{\hc}{\p}$
+\begin_inset Formula $\lam_{th}=\lam_{max}=\frac{\c c}{f_{min}}=\frac{\hc}{\p}$
 \end_inset
 
 .
@@ -674,7 +1117,7 @@ status collapsed
 \begin_layout Plain Layout
 מתח עצירה
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 בכיוון נגדי לעקירה כדי 
@@ -719,6 +1162,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename photoelectric_current.jpg
+	lyxscale 20
 	scale 60
 
 \end_inset
@@ -742,17 +1186,65 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Note Note
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-אנרגיה קינטית מקסימלית של האלקטרון הכי אנרגטי*** 
-\begin_inset Formula $E_{k,\max}=E_{ph}-\und{\phi}{Volt?}=\frac{\hc}{\lam}-\phi+eV_{stop}$
-\end_inset
 
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
-\end_layout
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
 
 \end_inset
 
@@ -760,58 +1252,176 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-תדירות/א
-\begin_inset Quotes erd
+
+\series bold
+פיזור קומפטון 
+\series default
+- 
+\size small
+
+\begin_inset Formula $\gam$
 \end_inset
 
-ג סף )
-\begin_inset Formula $W$
+ מתנגש 
+\begin_inset Formula $e^{-}$
 \end_inset
 
- עבודה( 
-\begin_inset Foot
-status collapsed
+ מוסר לו תנע ואנרגיה.
+ 
+\begin_inset Formula $\ua\lam,\da p_{ph}$
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
-התדירות המינימלית ואורך הגל המקסימלי שגורמים לצאתם של אלקטרונים )בעלי אנרגיה
- קינטית השווה לאפס - אופייני לסוג המתכת(.
- לא תלויים בעוצמת האור - מספר הפוטונים.
-\end_layout
+\begin_inset Graphics
+	filename kompton_sketch.png
+	scale 30
 
 \end_inset
 
  
-\begin_inset Formula $\lam_{\max}=\frac{\hc}{W}$
+\begin_inset Formula $\c{\lam_{c}^{e}}=0.0243\am$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lam_{f}=\lam_{i}+\lam_{c}\left(1-\cos\t\right)$
 \end_inset
 
  ; 
-\begin_inset Formula $v_{\min}=\frac{W}{\c h}$
+\begin_inset Formula $\lam_{c}=\frac{\c h}{mc}=\frac{\hc}{mc^{2}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
-מתח עצירה 
+תנע: 
+\begin_inset Formula $\begin{matrix}\hx:p_{\gam}=\frac{\c h}{\lam_{i}}=\frac{\c h}{\lam_{f}}\cos\t+mv_{e}\cos\b\\
+\hy:p_{\gam}\hy=0=\frac{\c h}{\lam_{f}}\sin\t-\und{\gam}{relativity}mv_{e}\sin\b
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{\gam}=\frac{\hc}{\lam_{i}}=\frac{\hc}{\lam_{f}}+\half mv^{2}$
+\end_inset
+
+ )ביחסות: 
+\begin_inset Formula $\frac{\hc}{\lam_{i}}+mc^{2}=\frac{\hc}{\lam_{f}}+\gam mc^{2}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+חישוב 
+\begin_inset Formula $\b$
+\end_inset
+
+: 
+\begin_inset Formula $\tan\b=\frac{\lam_{i}\sin\t}{\lam_{f}-\lam_{i}\cos\t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מקרה קיצון: 
+\begin_inset Formula $\t=180\ra\cos\t=-1\ra\lam_{f}=\lam_{i}+2\lam_{c}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+גל דה-ברולי
+\series default
+ )לכל חלקיק בעל מסה יש גם אופי גלי(
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lam_{DB}=\frac{\c h}{p}=\frac{\hc}{\sqrt{2m\c c^{2}E_{k}}}$
+\end_inset
+
+
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-מתח מינימלי שצריך להפעיל כדי למנוע מהאלקטרון הכי אנרגטי להשתחרר
+\begin_inset Formula $p$
+\end_inset
+
+ - תנע
 \end_layout
 
 \end_inset
 
- 
-\begin_inset Formula $q_{e}v_{stop}=E_{k,\max}$
+ ; ביחסותי 
+\begin_inset Formula $\lam_{DB}=\frac{\hc}{\sqrt{E_{tot}-\left(m\c c^{2}\right)^{2}}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
-מספר פוטונים נפלטים 
-\begin_inset Formula $N=\frac{P}{\ref{Eph}E_{ph}}$
+אנרגיה בקלאסי: 
+\begin_inset Formula $E_{k}=\frac{\left(\hc\right)^{2}}{2m\c c^{2}\cdot\lam_{DB}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu_{DB}=f_{DB}=\frac{E_{tot}}{\c h}$
 \end_inset
 
 
@@ -834,11 +1444,1269 @@ height "0.2pt"
 \begin_layout Plain Layout
 
 \series bold
+פיזור בראג 
+\series default
+)התאבכות בונה בפיזור מגביש(
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename brag_sketch.jpeg
+	scale 17
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $m\lam=2d\sin\t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+סדר פיזור מקס: 
+\begin_inset Formula $m_{max}=\floor{\frac{2d}{\lam}}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\frac{2d}{m_{max}+1}<\lam\le\frac{2d}{m_{max}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+מודל בוהר
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+ספקטרום אטומי
+\end_layout
+
+\begin_layout Plain Layout
+ריגברג-ריץ: 
+\begin_inset Formula $\frac{1}{\lam}=\upr R{\text{קבוע לכל חומר}}\cdot\left(\frac{1}{m^{2}}-\frac{1}{n^{2}}\right)$
+\end_inset
+
+ )
+\begin_inset Formula $n>m$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+ תכונה של חומר: 
+\begin_inset Formula $R=z^{2}\frac{\upr{m_{e}}{\text{always \ensuremath{e^{-}} }}\upr{k^{2}}{\text{kolon}}q_{e}^{4}}{4\pi\c c\hb^{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+עבור מימן: 
+\begin_inset Formula $R_{H}=1.0967\exp 7\left[\frac{1}{meter}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\defaz$
+\end_inset
+
+ ; 
+\begin_inset Formula $M_{nuc}=\left(z+\#_{n^{0}}\right)1836m_{e}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+מודל סמי-קלאסי 
+\series default
+)תנועה של 
+\begin_inset Formula $e^{-}$
+\end_inset
+
+ סביב גרעין(
+\end_layout
+
+\begin_layout Plain Layout
+הנחות
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+ - מס אטומי ; 
+\begin_inset Formula $m$
+\end_inset
+
+ - מסה ; 
+\begin_inset Formula $e$
+\end_inset
+
+ מטען ; 
+\begin_inset Formula $L$
+\end_inset
+
+ תנע זוויתי ; 
+\begin_inset Formula $r$
+\end_inset
+
+ רדיוס מסלול ; 
+\begin_inset Formula $a_{r}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L$
+\end_inset
+
+ תנ
+\begin_inset Quotes erd
+\end_inset
+
+ז - כפולה שלמה של 
+\begin_inset Formula $\hb$
+\end_inset
+
+: 
+\begin_inset Formula $L=n\hb$
+\end_inset
+
+.
+ 
+\begin_inset Formula $n=1,\dots$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+לחילופין: 
+\begin_inset Formula $\tp r=n\lam_{DB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מסת גרעין גדולה ביחס לחלקיק: 
+\begin_inset Formula $m<<M_{nuc}$
+\end_inset
+
+ )אם לא מתקיים, מחליפים 
+\begin_inset Formula $m$
+\end_inset
+
+ ב 
+\begin_inset Formula $\mu=\frac{mM_{nuc}}{m+M_{nuc}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+במעבר בין מסלולים, נפלט/נקלט פוטון )
+\begin_inset Formula $\ua L\lra\text{absorb \ensuremath{\gam}}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+תוצאות:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $L=pr=mvr\,;\,ma_{r}=\frac{mv^{2}}{r}=\frac{mze^{2}}{r^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{n}=-\frac{z^{2}}{n^{2}}\cdot\frac{mk^{2}\upr{q^{4}}{charge}}{2\hb^{2}}=-E_{0}$
+\end_inset
+
+ ; 
+\begin_inset Formula $E_{0}=\frac{mk^{2}q^{4}}{2\hb^{2}}\upr ={\el\ra}13.61\left[eV\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כמה אנרגיה מקרינים לתוך המערכת )שלילי
+\begin_inset Formula $\la$
+\end_inset
+
+ 
+\begin_inset Formula $\gam$
+\end_inset
+
+ משתחררים(:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta E_{i\ra f}=\frac{\hc}{\lam_{i\ra f}}=z^{2}E_{0}\left(\frac{1}{n_{i}^{2}}-\frac{1}{n_{f}^{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+מבוא להסתברות
+\end_layout
+
+\begin_layout Plain Layout
+ממוצע/תוחלת 
+\begin_inset Formula $\left\langle x\right\rangle =\overline{x}=\sum_{x}xP\left(x\right)=\int_{x=x_{min}}^{x=x_{max}}xP\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+בכללי: 
+\begin_inset Formula $\left\langle f\left(x\right)\right\rangle =\int_{x=x_{min}}^{x=x_{max}}f\left(x\right)P\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+תכונת הלינאריות עבור )תלויים/לא(: 
+\begin_inset Formula $\left\langle ax+by\right\rangle =a\left\langle x\right\rangle +b\left\langle y\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+עבור 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בלתי תלויים: 
+\begin_inset Formula $\left\langle xy\right\rangle =\left\langle x\right\rangle \cdot\left\langle y\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+שונות: 
+\begin_inset Formula $Var\left(x\right)=\left(\D x\right)^{2}=\left\langle \left(x-\left\langle x\right\rangle \right)^{2}\right\rangle =\left\langle x^{2}\right\rangle -\left\langle x\right\rangle ^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+תכונות צפיפות הסתברות 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+אי שליליות )אבל יכול להיות 
+\begin_inset Formula $P\left(x\right)>1$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Plain Layout
+הסתברות ל
+\begin_inset Quotes erd
+\end_inset
+
+איפשהו
+\begin_inset Quotes erd
+\end_inset
+
+ בתחום: 
+\begin_inset Formula $\int_{x=x_{min}}^{x=x_{max}}P\left(x\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+עבור חלקיק מתואר כפונ' גל 
+\begin_inset Formula $\left|\psi\left(x\right)\right|^{2}=P\left(x\right)$
+\end_inset
+
+ )
+\series bold
+במקרה הקרטזי בלבד!
+\series default
+(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+עקרון אי הוודאות
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="40col%">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מקום-תנע: 
+\begin_inset Formula $\D x\cdot\D p\ge\frac{\hb}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+זמן-אנרגיה: 
+\begin_inset Formula $\D t\cdot\D E\ge\frac{\hb}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לתקן מרווח רע
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename algo_for_uncertainty.jpeg
+	lyxscale 20
+	scale 11.5
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להתעלם מה
+\begin_inset Quotes erd
+\end_inset
+
+תרגיל מסוג
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+תנע זוויתי
+\end_layout
+
+\begin_layout Plain Layout
+תנע זוויתי 
+\begin_inset Formula $L=\sqrt{l\left(l+1\right)\hb}$
+\end_inset
+
+ )
+\begin_inset Formula $l=0,1,\dots,\left(n-1\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+היטל על ציר 
+\begin_inset Formula $\hz$
+\end_inset
+
+: 
+\begin_inset Formula $L_{z}=m_{l}\hb$
+\end_inset
+
+ )
+\begin_inset Formula $m_{l}=-l,-l+1,\dots,0,\dots,l$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+זווית: 
+\begin_inset Formula $\cos\t=\frac{L_{z}}{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+ספין ושטרן-גרלך
+\end_layout
+
+\begin_layout Plain Layout
+ניוון של ספין לא שלם 
+\begin_inset Formula $2s+1$
+\end_inset
+
+ )של ספין שלם הניוון הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Plain Layout
+כאשר 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+ בכיוון התנועה של החלקיק.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לבדוק לפני שאני מתחייב: 
+\begin_inset Formula $m_{s}=\pm\left(\half+i\right),i=0,\dots,2s-1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אפקט זימן
+\end_layout
+
+\begin_layout Plain Layout
+כאשר 
+\begin_inset Formula $\vec{B}=B\hz$
+\end_inset
+
+ )אפשר לסובב את הבעיה ככה שיתקיים(.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vec{\mu}=-\frac{\mu_{B}\left(\vec{L}+2\vec{s}\right)}{\hb}$
+\end_inset
+
+ ; 
+\begin_inset Formula $W=-\vec{\mu}\cdot\vec{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{n,m_{l},m_{s}}=-\frac{z^{2}}{n^{2}}E_{1}+m_{l}\mu_{B}B+\und{2m_{s}\mu_{B}B}{\text{for effect Ziman, we assume \ensuremath{=0}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף הערה מה זה 
+\begin_inset Formula $m_{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+מומנט מגנטי: 
+\begin_inset Formula $\mu_{B}=\frac{\upr{\c e}{\text{charge}}\hb}{2\und m{mass}}$
+\end_inset
+
+.
+
+\size footnotesize
+ 
+\size scriptsize
+עבור אלקטרון 
+\begin_inset Formula $e^{-}\ra\mu_{B}=9.27\exp{-24}\left[\frac{J}{T}\right]=5.8\exp{-5}\left[\frac{eV}{T}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף ניסוי שטרן-גרלך
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+בור פוטנציאל 
+\begin_inset Formula $\infty$
+\end_inset
+
+ חד מימדי )
+\begin_inset Formula $1d$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $V\left(x\right)=\begin{cases}
+0 & 0\le x\le L\\
+\infty & else
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\psi_{n}\left(x\right)=\begin{cases}
+\sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right) & 0\le x\le L\\
+0 & else
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{n}=\frac{\pi^{2}\hb^{2}}{2mL^{2}}n^{2}=\frac{\c h^{2}}{8mL^{2}}n^{2}$
+\end_inset
+
+ ; 
+\begin_inset Formula $n=1,2,\dots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+מיקום: 
+\begin_inset Formula $\left\langle x\right\rangle =\frac{L}{2}$
+\end_inset
+
+ ; 
+\begin_inset Formula $\left\langle x^{2}\right\rangle =\frac{L^{2}}{3}-\frac{L^{2}}{2n^{2}\pi^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אי וודאות: 
+\begin_inset Formula $\D x=\sqrt{Var\left(x\right)}=\sqrt{\frac{L^{2}}{12}-\frac{L^{2}}{2n^{2}\pi^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+תנע: 
+\begin_inset Formula $\left\langle p\right\rangle =0$
+\end_inset
+
+ ; 
+\begin_inset Formula $\left\langle p^{2}\right\rangle =\left(\hb k\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+הסתברות לתחום:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\left(x_{1}\le x\le x_{2}\right)=\frac{2}{L}\left(\half x-\frac{L}{4\pi n}\sin\left(\frac{\tp nx}{L}\right)\right)\mid_{x_{1}}^{x_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+בור פוטנציאל 
+\begin_inset Formula $\infty$
+\end_inset
+
+ דו מימדי )
+\begin_inset Formula $2d$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $V\left(x,y\right)=\begin{cases}
+0 & \begin{matrix}0\le x\le L_{x}\\
+0\le y\le L_{y}
+\end{matrix}\\
+\infty & else
+\end{cases}$
+\end_inset
+
+ ; 
+\begin_inset Formula $n=1,2,\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E\left(n_{x},n_{y}\right)=\frac{\hb^{2}\pi^{2}}{2m}\left(\frac{n_{x}^{2}}{L_{x}^{2}}+\frac{n_{y}^{2}}{L_{y}^{2}}\right)=\frac{\c h^{2}}{8m}\left(\frac{n_{x}^{2}}{L_{x}^{2}}+\frac{n_{y}^{2}}{L_{y}^{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+פונקציית גל )פתרון שרדינגר(: 
+\begin_inset Formula $\psi\left(x,y\right)=A\sin\left(k_{x}x\right)\sin\left(k_{y}y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+בור פוטנציאל 
+\begin_inset Formula $\infty$
+\end_inset
+
+ דו מימדי )
+\begin_inset Formula $3d$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $V\left(x,y,z\right)=\begin{cases}
+0 & \begin{matrix}0\le x\le L_{x}\\
+0\le y\le L_{y}\\
+0\le z\le L_{z}
+\end{matrix}\\
+\infty & else
+\end{cases}$
+\end_inset
+
+ ; 
+\begin_inset Formula $n=1,2,\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $E\left(n_{x},n_{y},n_{z}\right)=\frac{\hb^{2}\pi^{2}}{2m}\left(\frac{n_{x}^{2}}{L_{x}^{2}}+\frac{n_{y}^{2}}{L_{y}^{2}}+\frac{n_{z}^{2}}{L_{z}^{2}}\right)=\frac{\c h^{2}}{8m}\left(\frac{n_{x}^{2}}{L_{x}^{2}}+\frac{n_{y}^{2}}{L_{y}^{2}}+\frac{n_{z}^{2}}{L_{z}^{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+מתנד הרמוני
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $V\left(x\right)=\half m\om^{2}x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\psi_{n}\left(x\right)=\begin{matrix}\sqrt{\frac{1}{2^{n}n!}}\left(\frac{m\om}{\pi\hb}\right)^{1/4}\cdot\\
+\cdot exp\left(-\frac{m\om x^{2}}{2\hb}\right)H_{n}\left(\sqrt{\frac{m\om}{\hb}}x\right)
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{n}=\hb\om\cdot\left(n+\half\right)$
+\end_inset
+
+ ; 
+\begin_inset Formula $n=\mathbf{0},1,\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כאשר: 
+\begin_inset Formula $\begin{matrix}H_{0}\left(y\right)\equiv1,\,\purple{H_{1}\left(y\right)\equiv2y},\,H_{2}\left(y\right)\equiv4y^{2}-2\\
+H_{3}\left(y\right)\equiv8y^{3}-12y,\,\purple{H_{4}\left(y\right)\equiv16y^{4}-48y^{2}+12}
+\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "32col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
 משוואות שרדינגר
 \end_layout
 
 \begin_layout Plain Layout
-אלקטרון באטום מימן - שרדינגר
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לשקול להוסיף את המקרה התלוי בזמן המפחיד )המקרה מפחיד(
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+חד מימדי, לא תלוי בזמן: 
+\begin_inset Formula $\frac{d^{2}\psi\left(x\right)}{dx^{2}}=-\frac{2m}{\hb^{2}}\left(E-V\left(x\right)\right)\cdot\psi\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אלקטרון באטום מימן
 \end_layout
 
 \begin_layout Plain Layout
@@ -849,7 +2717,7 @@ height "0.2pt"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Formula $\az=0.529\mathring{A}$
+\begin_inset Formula $\defaz$
 \end_inset
 
 
@@ -1562,48 +3430,6 @@ m=-l,\left(-l+1\right),\left(-l+2\right),\dots,0,\dots,l
 \end_layout
 
 \begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-יחידות
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $mm=10^{-3}m$
-\end_inset
-
-, 
-\begin_inset Formula $\mu m=10^{-6}m$
-\end_inset
-
-, 
-\begin_inset Formula $nm=10^{-9}m$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $1\left[Kg\right]=6.022\exp{26}\left[amu\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -1691,889 +3517,6 @@ status open
 
 \end_layout
 
-\end_inset
-
- 
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "32col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 1
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.1pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-חוקי לוג 
-\begin_inset Formula $\log/\ln$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-הגדרה
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-a^{x}=y\Lra\log_{a}\left(y\right)=x
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-e^{x}=y\Lra\log_{e}y=\ln y=x
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\log_{a}\left(a^{x}\right)=x
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-e=\lim_{x\ra\infty}\left(1+\frac{1}{x}\right)^{x}=\lim_{x\ra0}\left(1+x\right)^{\frac{1}{x}}=2.71828
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-\log_{b}x=\frac{\ln x}{\ln b}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-כפל/חילוק
-\begin_inset Formula 
-\[
-\log_{b}\left(xy\right)=\log_{b}x+\log_{b}y
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\log_{b}\frac{x}{y}=\log_{b}x-\log_{b}y=-\log_{b}\frac{y}{x}
-\]
-
-\end_inset
-
-החלפת בסיס
-\begin_inset Formula 
-\[
-\log_{b}c=\frac{1}{\log_{c}b}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-נגזרות ואינטגרל
-\begin_inset Formula 
-\[
-\frac{d}{dx}\log_{b}x=\frac{1}{x\ln b},\,\frac{d}{dx}\ln x=\frac{1}{x}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\int\log_{b}x\cdot dx=x\left(\log_{b}x-\frac{1}{\ln b}\right)
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\int\ln x\cdot dx=x\ln x-x
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-\int_{0}^{\infty}x^{n}e^{-\alpha x}dx=\frac{n!}{\alpha^{n+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-ערכים מיוחדים
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-\log_{b}0=undefined,\,\lim_{x\ra0^{+}}\log_{b}x=-\infty
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\log_{b}1=0,\,\log_{b}b=1
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\lim_{x\ra\infty}\log_{b}x=\infty
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-חוקי חזקות
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-x^{a}\cdot x^{b}=x^{a+b},\,\left(x^{a}\right)^{b}=x^{ab},\,\frac{x^{a}}{x^{b}}=x^{a-b}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-x^{-a}=\frac{1}{x^{a}},\,x^{\frac{a}{b}}=\sqrt[b]{x^{a}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-להוסיף יחידות מידה 
-\begin_inset CommandInset href
-LatexCommand href
-name "מפה"
-target "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F_(%D7%9E%D7%99%D7%93%D7%94)#:~:text=%D7%94%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F%20%D7%94%D7%99%D7%90%20%D7%92%D7%9D%20%D7%99%D7%97%D7%99%D7%93%D7%AA%20%D7%9E%D7%A9%D7%A7%D7%9C,%D7%9B%D7%95%D7%9B%D7%91%D7%99%20%D7%9C%D7%9B%D7%AA%20%D7%90%D7%97%D7%A8%D7%99%D7%9D%20%D7%91%D7%97%D7%9C%D7%9C."
-literal "false"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Plain Layout
-https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F_(%D7%9E%D7%99%D
-7%93%D7%94)#:~:text=%D7%94%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F%20%D7%94%D7%99%D7
-%90%20%D7%92%D7%9D%20%D7%99%D7%97%D7%99%D7%93%D7%AA%20%D7%9E%D7%A9%D7%A7%D7%9C,%
-D7%9B%D7%95%D7%9B%D7%91%D7%99%20%D7%9C%D7%9B%D7%AA%20%D7%90%D7%97%D7%A8%D7%99%D7
-%9D%20%D7%91%D7%97%D7%9C%D7%9C
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-פיזור קומפטון
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-למלא
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-ספין ושטרן-גרלך
-\end_layout
-
-\begin_layout Plain Layout
-ניוון של ספין לא שלם 
-\begin_inset Formula $2s+1$
-\end_inset
-
- )של ספין שלם הניוון הוא 
-\begin_inset Formula $\infty$
-\end_inset
-
-(.
-\end_layout
-
-\begin_layout Plain Layout
-פרמיונים ובוזונים
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-בוזונים
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-פרמיונים
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-פוטון: 
-\begin_inset Formula $\gamma\ra s=1$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-אלקטרון: 
-\begin_inset Formula $e^{-}\ra s=\half$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-בוזון היגס: 
-\begin_inset Formula $s=0$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-פרוטון: 
-\begin_inset Formula $p^{+}\ra s=\half$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-להוסיף: זהב, כסף וכ
-\begin_inset Quotes erd
-\end_inset
-
-ו
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-כאשר 
-\begin_inset Formula $\vec{s}$
-\end_inset
-
- בכיוון התנועה של החלקיק.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-לבדוק לפני שאני מתחייב: 
-\begin_inset Formula $m_{s}=\pm\left(\half+i\right),i=0,\dots,2s-1$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-אפקט זימן
-\end_layout
-
-\begin_layout Plain Layout
-כאשר 
-\begin_inset Formula $\vec{B}=B\hz$
-\end_inset
-
- )אפשר לסובב את הבעיה ככה שיתקיים(.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\vec{\mu}=-\frac{\mu_{B}\left(\vec{L}+2\vec{s}\right)}{\hb}$
-\end_inset
-
- ; 
-\begin_inset Formula $W=-\vec{\mu}\cdot\vec{B}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $E_{n,m_{l},m_{s}}=-\frac{z^{2}}{n^{2}}E_{1}+m_{l}\mu_{B}B+\und{2m_{s}\mu_{B}B}{\text{for effect Ziman, we assume \ensuremath{=0}}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-להוסיף הערה מה זה 
-\begin_inset Formula $m_{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-מומנט מגנטי: 
-\begin_inset Formula $\mu_{B}=\frac{\upr{\c e}{\text{charge}}\hb}{2\und m{mass}}$
-\end_inset
-
-.
-
-\size footnotesize
- 
-\size scriptsize
-עבור אלקטרון 
-\begin_inset Formula $e^{-}\ra\mu_{B}=9.27\exp{-24}\left[\frac{J}{T}\right]=5.8\exp{-5}\left[\frac{eV}{T}\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-תנע זוויתי
-\end_layout
-
-\begin_layout Plain Layout
-תנע זוויתי 
-\begin_inset Formula $L=\sqrt{l\left(l+1\right)\hb}$
-\end_inset
-
- )
-\begin_inset Formula $l=0,1,\dots,\left(n-1\right)$
-\end_inset
-
-(
-\end_layout
-
-\begin_layout Plain Layout
-היטל על ציר 
-\begin_inset Formula $\hz$
-\end_inset
-
-: 
-\begin_inset Formula $L_{z}=m_{l}\hb$
-\end_inset
-
- )
-\begin_inset Formula $m_{l}=-l,-l+1,\dots,0,\dots,l$
-\end_inset
-
-(
-\end_layout
-
-\begin_layout Plain Layout
-זווית: 
-\begin_inset Formula $\cos\t=\frac{L_{z}}{L}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-להוסיף ניסוי שטרן-גרלך
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "32col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 1
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.1pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-אורך גל דה-ברולי
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula $L=pr=mvr\,;\,ma_{r}=\frac{mv^{2}}{r}=\frac{mze^{2}}{r^{2}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-מודל בוהר
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $a_{0}=0.529\am$
-\end_inset
-
- ; 
-\begin_inset Formula $M_{nuc}=\left(z+\#_{n^{0}}\right)1836m_{e}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-הנחות
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Formula $z$
-\end_inset
-
- - מס אטומי ; 
-\begin_inset Formula $m$
-\end_inset
-
- - מסה ; 
-\begin_inset Formula $e$
-\end_inset
-
- מטען ; 
-\begin_inset Formula $L$
-\end_inset
-
- תנע זוויתי ; 
-\begin_inset Formula $r$
-\end_inset
-
- רדיוס מסלול ; 
-\begin_inset Formula $a_{r}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $L$
-\end_inset
-
- כפולה שלמה של 
-\begin_inset Formula $\hb$
-\end_inset
-
-: 
-\begin_inset Formula $L=n\hb$
-\end_inset
-
-.
- 
-\begin_inset Formula $n=1,\dots$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-לחילופין: 
-\begin_inset Formula $\tp r=n\lam_{DB}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-מסת גרעין גדולה ביחס לחלקיק: 
-\begin_inset Formula $m<<M_{nuc}$
-\end_inset
-
- )אם לא מתקיים, מחליפים 
-\begin_inset Formula $m$
-\end_inset
-
- ב 
-\begin_inset Formula $\mu=\frac{mM_{nuc}}{m+M_{nuc}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-אורך גל דה-ברולי
-\end_layout
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "90col%"
-height "0.2pt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
-\begin_inset space \hspace*{\fill}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size scriptsize
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size scriptsize
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "32col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
 \begin_layout Plain Layout
 
 \size scriptsize
@@ -2602,6 +3545,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+ספין ומספר אטומי: 
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
 <features tabularvalignment="middle">
@@ -2804,6 +3748,9 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
 <features tabularvalignment="middle">
@@ -3148,6 +4095,227 @@ LatexCommand rule
 offset "0.5ex"
 width "90col%"
 height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.1pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+חוקי לוג 
+\begin_inset Formula $\log/\ln$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+הגדרה
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+a^{x}=y\Lra\log_{a}\left(y\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x}=y\Lra\log_{e}y=\ln y=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log_{a}\left(a^{x}\right)=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e=\lim_{x\ra\infty}\left(1+\frac{1}{x}\right)^{x}=\lim_{x\ra0}\left(1+x\right)^{\frac{1}{x}}=2.71828
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\log_{b}x=\frac{\ln x}{\ln b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כפל/חילוק
+\begin_inset Formula 
+\[
+\log_{b}\left(xy\right)=\log_{b}x+\log_{b}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log_{b}\frac{x}{y}=\log_{b}x-\log_{b}y=-\log_{b}\frac{y}{x}
+\]
+
+\end_inset
+
+החלפת בסיס
+\begin_inset Formula 
+\[
+\log_{b}c=\frac{1}{\log_{c}b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+נגזרות ואינטגרל
+\begin_inset Formula 
+\[
+\frac{d}{dx}\log_{b}x=\frac{1}{x\ln b},\,\frac{d}{dx}\ln x=\frac{1}{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\log_{b}x\cdot dx=x\left(\log_{b}x-\frac{1}{\ln b}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\ln x\cdot dx=x\ln x-x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}x^{n}e^{-\alpha x}dx=\frac{n!}{\alpha^{n+1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ערכים מיוחדים
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\log_{b}0=undefined,\,\lim_{x\ra0^{+}}\log_{b}x=-\infty
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log_{b}1=0,\,\log_{b}b=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\ra\infty}\log_{b}x=\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "0.2pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+חוקי חזקות
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+x^{a}\cdot x^{b}=x^{a+b},\,\left(x^{a}\right)^{b}=x^{ab},\,\frac{x^{a}}{x^{b}}=x^{a-b}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{-a}=\frac{1}{x^{a}},\,x^{\frac{a}{b}}=\sqrt[b]{x^{a}}
+\]
 
 \end_inset
 

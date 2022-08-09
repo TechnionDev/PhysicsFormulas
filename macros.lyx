@@ -114,7 +114,7 @@ Unsorted
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ls}{L_{S_{1},S_{2}}}
+\renewcommand{\ls}{L_{S_{1},S_{2}}}
 \end_inset
 
 
@@ -135,35 +135,12 @@ Graphs
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\graph}{\left(V,E\right)}
+\renewcommand{\graph}{\left(V,E\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ggraph}{G=\graph}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\tgraph}{\left(V',E'\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\tggraph}{G'=\tgraph}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\ttgraph}{\left(V'',E''\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\ttggraph}{G''=\ttgraph}
+\renewcommand{\ggraph}{G=\graph}
 \end_inset
 
 
@@ -171,12 +148,22 @@ Graphs
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\igraph}[1]{\left(V_{#1},E_{#1}\right)}
+\renewcommand{\tgraph}{\left(V',E'\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\iggraph}[1]{G_{#1}=\igraph{#1}}
+\renewcommand{\tggraph}{G'=\tgraph}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ttgraph}{\left(V'',E''\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ttggraph}{G''=\ttgraph}
 \end_inset
 
 
@@ -184,7 +171,12 @@ Graphs
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\gtgraph}{G'=\left(V',E'\right)}
+\renewcommand{\igraph}[1]{\left(V_{#1},E_{#1}\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iggraph}[1]{G_{#1}=\igraph{#1}}
 \end_inset
 
 
@@ -192,7 +184,15 @@ Graphs
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\absv}{\left|V\right|}
+\renewcommand{\gtgraph}{G'=\left(V',E'\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\absv}{\left|V\right|}
 \end_inset
 
 
@@ -221,17 +221,17 @@ Functions
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ewfunc}[1]{#1:E\ra\R}
+\renewcommand{\ewfunc}[1]{#1:E\ra\R}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ewfuncp}[1]{#1:E\ra\R^{+}}
+\renewcommand{\ewfuncp}[1]{#1:E\ra\R^{+}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ewfuncnn}[1]{#1:E\ra\R_{\geq0}}
+\renewcommand{\ewfuncnn}[1]{#1:E\ra\R_{\geq0}}
 \end_inset
 
 
@@ -239,7 +239,7 @@ Functions
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\vwfunc}[1]{#1:V\ra\R}
+\renewcommand{\vwfunc}[1]{#1:V\ra\R}
 \end_inset
 
 
@@ -260,50 +260,12 @@ Vectors and Infi
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\vF}{\vec{F}}
+\renewcommand{\vF}{\vec{F}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vN}{\vec{N}}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\h}[1]{\hat{#1}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hi}{\hat{i}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hj}{\hat{j}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hk}{\hat{k}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hx}{\hat{x}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hy}{\hat{y}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hz}{\hat{z}}
+\renewcommand{\vN}{\vec{N}}
 \end_inset
 
 
@@ -311,7 +273,37 @@ Vectors and Infi
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\grad}{\vec{\nabla}}
+\renewcommand{\h}[1]{\hat{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\hi}{\hat{i}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\hj}{\hat{j}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\hk}{\hat{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\hx}{\hat{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\hy}{\hat{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\hz}{\hat{z}}
 \end_inset
 
 
@@ -319,7 +311,15 @@ Vectors and Infi
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\oiint}{\varoiint}
+\renewcommand{\grad}{\vec{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\oiint}{\varoiint}
 \end_inset
 
 
@@ -340,7 +340,7 @@ Greek
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\eps}{\varepsilon}
+\renewcommand{\eps}{\varepsilon}
 \end_inset
 
 
@@ -348,25 +348,17 @@ Greek
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\t}{\theta}
+\renewcommand{\t}{\theta}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\p}{\phi}
+\renewcommand{\p}{\phi}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\vp}{\varphi}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\lam}{\lambda}
+\renewcommand{\vp}{\varphi}
 \end_inset
 
 
@@ -374,17 +366,7 @@ Greek
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\g}{\gamma}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\gam}{\gamma}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\Gam}{\Gamma}
+\renewcommand{\lam}{\lambda}
 \end_inset
 
 
@@ -392,25 +374,17 @@ Greek
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\a}{\alpha}
+\renewcommand{\g}{\gamma}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\alp}{\alpha}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\b}{\beta}
+\renewcommand{\gam}{\gamma}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\bet}{\beta}
+\renewcommand{\Gam}{\Gamma}
 \end_inset
 
 
@@ -418,12 +392,38 @@ Greek
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\om}{\omega}
+\renewcommand{\a}{\alpha}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ome}{\omega}
+\renewcommand{\alp}{\alpha}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\b}{\beta}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\bet}{\beta}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\om}{\omega}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ome}{\omega}
 \end_inset
 
 
@@ -444,17 +444,17 @@ Constants
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\half}{\frac{1}{2}}
+\renewcommand{\half}{\frac{1}{2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\quarter}{\frac{1}{4}}
+\renewcommand{\quarter}{\frac{1}{4}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\tp}{2\pi}
+\renewcommand{\tp}{2\pi}
 \end_inset
 
 
@@ -475,7 +475,7 @@ Physics Constants
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ez}{\varepsilon_{0}}
+\renewcommand{\ez}{\varepsilon_{0}}
 \end_inset
 
 
@@ -483,22 +483,22 @@ Physics Constants
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\c}[1]{\dot{#1}}
+\renewcommand{\c}[1]{\dot{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\exp}[1]{\cdot10^{#1}}
+\renewcommand{\exp}[1]{\cdot10^{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\hc}{\c h\c c}
+\renewcommand{\hc}{\c h\c c}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\hb}{\c{\hslash}}
+\renewcommand{\hb}{\purple{\c{\hslash}}}
 \end_inset
 
 
@@ -519,45 +519,32 @@ Sets and Related Operators
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\Z}{\mathbb{Z}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\N}{\mathbb{N}}
+\renewcommand{\N}{\mathbb{N}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\C}{\mathbb{C}}
+\renewcommand{\C}{\mathbb{C}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\P}{\mathbb{P}}
+\renewcommand{\P}{\mathbb{P}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Q}{\mathbb{Q}}
+\renewcommand{\Q}{\mathbb{Q}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\R}{\mathbb{R}}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\es}{\emptyset}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\nin}{\notin}
+\renewcommand{\R}{\mathbb{R}}
 \end_inset
 
 
@@ -565,12 +552,25 @@ Sets and Related Operators
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sseq}{\subseteq}
+\renewcommand{\es}{\emptyset}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\nsseq}{\nsubseteq}
+\renewcommand{\nin}{\notin}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\sseq}{\subseteq}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\nsseq}{\nsubseteq}
 \end_inset
 
 
@@ -591,7 +591,7 @@ Languages (Automata/Computation)
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\oHP}{\overline{HP}}
+\renewcommand{\oHP}{\overline{HP}}
 \end_inset
 
 
@@ -612,22 +612,22 @@ Text over/under
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\undeq}[1]{\underset{#1}{\underbrace{=}}}
+\renewcommand{\undeq}[1]{\underset{#1}{\underbrace{=}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\und}[2]{\underset{#2}{\underbrace{#1}}}
+\renewcommand{\und}[2]{\underset{#2}{\underbrace{#1}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\upreq}[1]{\overset{#1}{\overbrace{=}}}
+\renewcommand{\upreq}[1]{\overset{#1}{\overbrace{=}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\upr}[2]{\overset{#2}{\overbrace{#1}}}
+\renewcommand{\upr}[2]{\overset{#2}{\overbrace{#1}}}
 \end_inset
 
 
@@ -648,12 +648,12 @@ Logic Symbols
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\fa}{\forall}
+\renewcommand{\fa}{\forall}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ex}{\exists}
+\renewcommand{\ex}{\exists}
 \end_inset
 
 
@@ -661,32 +661,32 @@ Logic Symbols
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\Ra}{\Longrightarrow}
+\renewcommand{\Ra}{\Longrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\Lra}{\Longleftrightarrow}
+\renewcommand{\Lra}{\Longleftrightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\La}{\Longleftarrow}
+\renewcommand{\La}{\Longleftarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ra}{\rightarrow}
+\renewcommand{\ra}{\rightarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\la}{\leftarrow}
+\renewcommand{\la}{\leftarrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\lra}{\longleftrightarrow}
+\renewcommand{\lra}{\longleftrightarrow}
 \end_inset
 
 
@@ -707,7 +707,7 @@ Symbols
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\d}{\partial}
+\renewcommand{\d}{\partial}
 \end_inset
 
 
@@ -715,7 +715,7 @@ Symbols
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\clf}{F^{+}}
+\renewcommand{\clf}{F^{+}}
 \end_inset
 
 
@@ -723,17 +723,17 @@ Symbols
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\mP}{\mathcal{P}}
+\renewcommand{\mP}{\mathcal{P}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\varP}{\mathcal{P}}
+\renewcommand{\varP}{\mathcal{P}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\varF}{\mathcal{F}}
+\renewcommand{\varF}{\mathcal{F}}
 \end_inset
 
 
@@ -741,12 +741,12 @@ Symbols
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ua}{\uparrow}
+\renewcommand{\ua}{\uparrow}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\da}{\downarrow}
+\renewcommand{\da}{\downarrow}
 \end_inset
 
 
@@ -767,25 +767,12 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sqsub}{\sqsubseteq}
+\renewcommand{\sqsub}{\sqsubseteq}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sqsup}{\sqsupseteq}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\purple}[1]{\textcolor{sharpPink}{#1}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\normal}[1]{{\normalcolor #1}}
+\renewcommand{\sqsup}{\sqsupseteq}
 \end_inset
 
 
@@ -793,27 +780,12 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ph}[1]{\textcolor{sharpPink}{\hat{{\normalcolor {\normalcolor #1}}}}}
+\renewcommand{\purple}[1]{\textcolor{sharpPink}{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\hsqcup}{\ph{\sqcup}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hsqcap}{\ph{\sqcap}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hsqsub}{\ph{\sqsub}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\hsqsup}{\ph{\sqsup}}
+\renewcommand{\normal}[1]{{\normalcolor #1}}
 \end_inset
 
 
@@ -821,36 +793,27 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\hp}{\ph +}
+\renewcommand{\ph}[1]{\textcolor{sharpPink}{\hat{{\normalcolor {\normalcolor #1}}}}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\hcd}{\ph{\cdot}}
+\renewcommand{\hsqcup}{\ph{\sqcup}}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sig}{\sigma}
+\renewcommand{\hsqcap}{\ph{\sqcap}}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\asig}{\sigma^{\textcolor{sharpPink}{\#}}}
+\renewcommand{\hsqsub}{\ph{\sqsub}}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\pinksharp}[1]{#1^{\textcolor{sharpPink}{\#}}}
+\renewcommand{\hsqsup}{\ph{\sqsup}}
 \end_inset
 
 
@@ -858,7 +821,12 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\aa}[1]{\left\llbracket #1\right\rrbracket ^{\textcolor{sharpPink}{\#}}\asig}
+\renewcommand{\hp}{\ph +}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\hcd}{\ph{\cdot}}
 \end_inset
 
 
@@ -866,7 +834,7 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\aaeq}[2]{\aa{#1}=\asig\left[#2\right]}
+\renewcommand{\sig}{\sigma}
 \end_inset
 
 
@@ -874,7 +842,7 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sa}[1]{\left\llbracket #1\right\rrbracket }
+\renewcommand{\asig}{\sigma^{\textcolor{sharpPink}{\#}}}
 \end_inset
 
 
@@ -882,7 +850,7 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sas}[1]{\left\llbracket #1\right\rrbracket ^{\textcolor{sharpPink}{\#}}}
+\renewcommand{\pinksharp}[1]{#1^{\textcolor{sharpPink}{\#}}}
 \end_inset
 
 
@@ -890,7 +858,39 @@ Abstract Analysis
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\widen}{\nabla}
+\renewcommand{\aa}[1]{\left\llbracket #1\right\rrbracket ^{\textcolor{sharpPink}{\#}}\asig}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\aaeq}[2]{\aa{#1}=\asig\left[#2\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\sa}[1]{\left\llbracket #1\right\rrbracket }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\sas}[1]{\left\llbracket #1\right\rrbracket ^{\textcolor{sharpPink}{\#}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\widen}{\nabla}
 \end_inset
 
 
@@ -911,20 +911,12 @@ Enclosures
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\set}[2]{\left\{  #1\mid#2\right\}  }
+\renewcommand{\set}[2]{\left\{  #1\mid#2\right\}  }
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\e}[2]{\left(#1,#2\right)}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\abs}[1]{\left|#1\right|}
+\renewcommand{\e}[2]{\left(#1,#2\right)}
 \end_inset
 
 
@@ -932,7 +924,7 @@ Enclosures
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\seg}[2]{\left[#1,#2\right]}
+\renewcommand{\abs}[1]{\left|#1\right|}
 \end_inset
 
 
@@ -940,12 +932,20 @@ Enclosures
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor }
+\renewcommand{\seg}[2]{\left[#1,#2\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\floor}[1]{\left\lfloor #1\right\rfloor }
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ceil}[1]{\left\lceil #1\right\rceil }
+\renewcommand{\ceil}[1]{\left\lceil #1\right\rceil }
 \end_inset
 
 
@@ -966,7 +966,7 @@ Series and Sums
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\Ss}{\Sigma^{*}}
+\renewcommand{\Ss}{\Sigma^{*}}
 \end_inset
 
 
@@ -974,30 +974,12 @@ Series and Sums
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\sumoneton}{\sum_{i=1}^{n}}
+\renewcommand{\sumoneton}{\sum_{i=1}^{n}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sumiinI}{\sum_{i\in I}}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\oneton}{1,\dots,n}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\setoneton}{\left\{  \oneton\right\}  }
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\xoneton}{x_{1},\dots,x_{n} }
+\renewcommand{\sumiinI}{\sum_{i\in I}}
 \end_inset
 
 
@@ -1005,7 +987,25 @@ Series and Sums
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\varton}[1]{#1_{1},\dots,#1_{n} }
+\renewcommand{\oneton}{1,\dots,n}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\setoneton}{\left\{  \oneton\right\}  }
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\xoneton}{x_{1},\dots,x_{n} }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\varton}[1]{#1_{1},\dots,#1_{n} }
 \end_inset
 
 
@@ -1039,7 +1039,7 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\Mx}{\left(\left\langle M\right\rangle ,x\right)}
+\renewcommand{\Mx}{\left(\left\langle M\right\rangle ,x\right)}
 \end_inset
 
 
@@ -1047,25 +1047,12 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\red}{\le}
+\renewcommand{\red}{\le}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\redp}{\red_{p}}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\part}{\text{PARTITION}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\ps}{\text{PSPACE}}
+\renewcommand{\redp}{\red_{p}}
 \end_inset
 
 
@@ -1073,7 +1060,12 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\tmm}{\left\langle M\right\rangle }
+\renewcommand{\part}{\text{PARTITION}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ps}{\text{PSPACE}}
 \end_inset
 
 
@@ -1081,7 +1073,7 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\tm}[1]{\left\langle #1\right\rangle }
+\renewcommand{\tmm}{\left\langle M\right\rangle }
 \end_inset
 
 
@@ -1089,12 +1081,7 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\bk}{\flat}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\blank}{\flat}
+\renewcommand{\tm}[1]{\left\langle #1\right\rangle }
 \end_inset
 
 
@@ -1102,7 +1089,12 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\M}{\mathcal{M}}
+\renewcommand{\bk}{\flat}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\blank}{\flat}
 \end_inset
 
 
@@ -1110,7 +1102,7 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\mi}[1]{M_{#1}}
+\renewcommand{\M}{\mathcal{M}}
 \end_inset
 
 
@@ -1118,27 +1110,7 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\fu}{f_{1}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\fd}{f_{2}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\ft}{f_{3}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\fq}{f_{4}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\fj}[1]{f_{#1}}
+\renewcommand{\mi}[1]{M_{#1}}
 \end_inset
 
 
@@ -1146,42 +1118,27 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\lu}{L_{1}}
+\renewcommand{\fu}{f_{1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ld}{L_{2}}
+\renewcommand{\fd}{f_{2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\lt}{L_{3}}
+\renewcommand{\ft}{f_{3}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\lq}{L_{4}}
+\renewcommand{\fq}{f_{4}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\li}[1]{L_{#1}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\leps}{L_{\eps}}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\lmi}[1]{L\left(M_{#1}\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\lm}{L\left(M\right)}
+\renewcommand{\fj}[1]{f_{#1}}
 \end_inset
 
 
@@ -1189,7 +1146,50 @@ Computation
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\fsa}[1]{\floor{\sqrt{\abs{#1}}}}
+\renewcommand{\lu}{L_{1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ld}{L_{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\lt}{L_{3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\lq}{L_{4}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\li}[1]{L_{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\leps}{L_{\eps}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\lmi}[1]{L\left(M_{#1}\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\lm}{L\left(M\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\fsa}[1]{\floor{\sqrt{\abs{#1}}}}
 \end_inset
 
 
@@ -1293,45 +1293,22 @@ Databases
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\ren}[2]{\rho_{#1/#2}}
+\renewcommand{\ren}[2]{\rho_{#1/#2}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\sel}[1]{\sig_{#1}}
+\renewcommand{\sel}[1]{\sig_{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\proj}[1]{\pi_{#1}}
+\renewcommand{\proj}[1]{\pi_{#1}}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\join}[1]{\Join_{#1}}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\lru}[1]{LR_{1}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\lwu}[1]{LW_{1}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\uwu}[1]{UW_{1}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\uru}[1]{UR_{1}\left(#1\right)}
+\renewcommand{\join}[1]{\Join_{#1}}
 \end_inset
 
 
@@ -1339,45 +1316,22 @@ Databases
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\lrd}[1]{LR_{2}\left(#1\right)}
+\renewcommand{\lru}[1]{LR_{1}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\lwd}[1]{LW_{2}\left(#1\right)}
+\renewcommand{\lwu}[1]{LW_{1}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\uwd}[1]{UW_{2}\left(#1\right)}
+\renewcommand{\uwu}[1]{UW_{1}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\urd}[1]{UR_{2}\left(#1\right)}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\lrt}[1]{LR_{3}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\lwt}[1]{LW_{3}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\uwt}[1]{UW_{3}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\urt}[1]{UR_{3}\left(#1\right)}
+\renewcommand{\uru}[1]{UR_{1}\left(#1\right)}
 \end_inset
 
 
@@ -1385,35 +1339,22 @@ Databases
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\lr}[2]{LR_{#1}\left(#2\right)}
+\renewcommand{\lrd}[1]{LR_{2}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\lw}[2]{LW_{#1}\left(#2\right)}
+\renewcommand{\lwd}[1]{LW_{2}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\uw}[2]{UW_{#1}\left(#2\right)}
+\renewcommand{\uwd}[1]{UW_{2}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ur}[2]{UR_{#1}\left(#2\right)}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\ru}[1]{R_{1}\left(#1\right)}
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\wu}[1]{W_{1}\left(#1\right)}
+\renewcommand{\urd}[1]{UR_{2}\left(#1\right)}
 \end_inset
 
 
@@ -1421,38 +1362,22 @@ Databases
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\rd}[1]{R_{2}\left(#1\right)}
+\renewcommand{\lrt}[1]{LR_{3}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\wtwo}[1]{W_{2}\left(#1\right)}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\rt}[1]{R_{3}\left(#1\right)}
+\renewcommand{\lwt}[1]{LW_{3}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\wt}[1]{W_{3}\left(#1\right)}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\r}[2]{R_{#1}\left(#2\right)}
+\renewcommand{\uwt}[1]{UW_{3}\left(#1\right)}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\w}[2]{W_{#1}\left(#2\right)}
+\renewcommand{\urt}[1]{UR_{3}\left(#1\right)}
 \end_inset
 
 
@@ -1460,7 +1385,82 @@ Databases
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\cl}[2]{#1_{#2}^{+}}
+\renewcommand{\lr}[2]{LR_{#1}\left(#2\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\lw}[2]{LW_{#1}\left(#2\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\uw}[2]{UW_{#1}\left(#2\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\ur}[2]{UR_{#1}\left(#2\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\ru}[1]{R_{1}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\wu}[1]{W_{1}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\rd}[1]{R_{2}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\wtwo}[1]{W_{2}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\rt}[1]{R_{3}\left(#1\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\wt}[1]{W_{3}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\r}[2]{R_{#1}\left(#2\right)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\w}[2]{W_{#1}\left(#2\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\renewcommand{\cl}[2]{#1_{#2}^{+}}
 \end_inset
 
 
@@ -1624,12 +1624,12 @@ Network Security
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\zeroes}{0\dots0}
+\renewcommand{\zeroes}{0\dots0}
 \end_inset
 
 
 \begin_inset FormulaMacro
-\newcommand{\ones}{1\dots1}
+\renewcommand{\ones}{1\dots1}
 \end_inset
 
 
@@ -1637,7 +1637,7 @@ Network Security
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\xor}{\oplus}
+\renewcommand{\xor}{\oplus}
 \end_inset
 
 
